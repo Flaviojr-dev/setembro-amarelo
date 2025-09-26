@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #ddd18e;
+    color:  #F4F4F4;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container_boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+h1 , h2, h3{
+   text-align: center;
+   display: block;
+    margin-bottom: 10px;
+}
+.conscienti{
+    background-color:  #4D6B42;
+    color: #fafafa; 
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    
+
+}
+.conscienti p{
+    flex-direction: column;
+    align-items: center;
+}
+.prevencao{
+    background-color:  #596E2C;
+    color: #fafafa;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.acolhimento{
+    background-color: #666b1e;
+    color: #fafafa;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+section{
+    background-color:  #b1a463;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+
+}
+
+.container-text{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+    border: 10px #ddd18e;
+
+}
