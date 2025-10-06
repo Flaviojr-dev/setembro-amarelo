@@ -1,83 +1,195 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+/* Botões com cores de Setembro Amarelo */
+button, .button-centro, .button-buscar, form button[type="submit"] {
+  background: linear-gradient(90deg, #ffe066 0%, #ffd700 100%);
+  color: #4d4d1e;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 12px 8px 0 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.2s, transform 0.2s, color 0.2s;
 }
-body {
-    background-color: #ddd18e;
-    color:  #F4F4F4;
-    line-height: 1.6;
-    padding: 20px;
+button:hover, .button-centro:hover, .button-buscar:hover, form button[type="submit"]:hover {
+  background: linear-gradient(90deg, #ffd700 0%, #ffe066 100%);
+  color: #222;
+  transform: translateY(-2px) scale(1.04);
+}
+/* Formulário centralizado e alinhado */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fffbe6;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 32px 24px 24px 24px;
+  margin: 32px auto 0 auto;
+  max-width: 420px;
+  width: 100%;
+}
+form label {
+  width: 100%;
+  font-weight: 600;
+  color: #4d6b42;
+  margin-bottom: 4px;
+  text-align: left;
+  margin-top: 12px;
+  letter-spacing: 0.01em;
+}
+form input[type="text"],
+form input[type="number"],
+form input[type="tel"],
+form input[type="email"] {
+  width: 100%;
+  max-width: 340px;
+  padding: 10px 12px;
+  border: 1.5px solid #b59f3b;
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  margin-top: 2px;
+  transition: border 0.2s;
+  box-sizing: border-box;
+}
+form input:focus {
+  border: 2px solid #4d6b42;
+  outline: none;
+  background: #f7f3d7;
+}
+form button[type="submit"] {
+  width: 100%;
+  max-width: 340px;
+  margin-top: 18px;
+  margin-bottom: 0;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #b59f3b 0%, #f4e285 100%);
+  color: #333;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+form button[type="submit"]:hover {
+  background: linear-gradient(90deg, #f4e285 0%, #b59f3b 100%);
+  transform: translateY(-2px) scale(1.03);
 }
 
-.container_boxes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+/* Footer centralizado e bonito */
+footer {
+  background: #4d6b42;
+  color: #fff;
+  padding: 32px 0 18px 0;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 0 0 16px 16px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.07);
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+footer li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+/* Botões lado a lado e centralizados */
+.button-centro, .button-buscar {
+  display: inline-block;
+  margin: 0 12px 0 0;
+  min-width: 160px;
+  text-align: center;
 }
 
-header{
-    text-align: center;
-    margin-bottom: 20px;
-}
-div{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-h1 , h2, h3{
-   text-align: center;
-   display: block;
-    margin-bottom: 10px;
-}
-.conscienti{
-    background-color:  #4D6B42;
-    color: #fafafa; 
-    width: 300px;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
-    
-
-}
-.conscienti p{
-    flex-direction: column;
-    align-items: center;
-}
-.prevencao{
-    background-color:  #596E2C;
-    color: #fafafa;
-    width: 300px;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
-}
-.acolhimento{
-    background-color: #666b1e;
-    color: #fafafa;
-    width: 300px;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
-}
-section{
-    background-color:  #b1a463;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
-    margin-top: 20px;
-
+.button-centro:last-child, .button-buscar:last-child {
+  margin-right: 0;
 }
 
-.container-text{
-    width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 40px;
-    border: 10px #ddd18e;
+.botoes-ajuda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin: 18px 0 0 0;
+}
+/* Box visual para todas as divs (exceto containers principais) */
+div:not(.container_boxes):not(.container) {
+  background: linear-gradient(135deg, #fffbe6 60%, #f7e9a0 100%);
+  border: 1.5px solid #e2c96b;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(181,159,59,0.13), 0 1.5px 6px rgba(0,0,0,0.06);
+  padding: 28px 18px;
+  margin: 18px 0;
+  min-width: 200px;
+  min-height: 120px;
+  max-width: 95vw;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+}
+div:not(.container_boxes):not(.container):hover {
+  box-shadow: 0 12px 36px rgba(181,159,59,0.18), 0 2px 8px rgba(0,0,0,0.10);
+  background: linear-gradient(135deg, #f7e9a0 60%, #fffbe6 100%);
+  transform: translateY(-4px) scale(1.02);
+}
+/* Imagens pequenas e centralizadas */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
 
-}hfchcfh
+.box {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+/* Centralização de todas as divs e sections */
+div, section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Centralizar textos dos títulos */
+h1, h2, h3 {
+  text-align: center;
+}
+
+/* Garantir responsividade básica */
+@media (max-width: 700px) {
+  div, section {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
